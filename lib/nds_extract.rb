@@ -8,7 +8,7 @@ def gross_for_director(director_data)
   data = Hash.new [] 
   data[director_data[:name]]=0
   i=0 
-  while i < director_data[:movies] do
+  while i < director_data[:movies].length do
    data[director_data[:name]] += director_data[:movies][i][:worldwide_gross]
    i += 1
 end
