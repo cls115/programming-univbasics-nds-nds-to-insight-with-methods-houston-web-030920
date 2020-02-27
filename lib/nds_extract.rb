@@ -1,4 +1,4 @@
-require 'pry'
+
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
@@ -9,11 +9,11 @@ def gross_for_director(director_data)
   data[director_data[:name]]=0
   i=0 
   while i < director_data[:movies] do
-   data[director_data[:worldwide_gross
+   data[director_data[:name]] += director_data[:movies][i][:worldwide_gross]
+   i += 1
 end
-    
+return data
   
-binding.pry
 
 end
 
