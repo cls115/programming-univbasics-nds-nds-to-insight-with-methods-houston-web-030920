@@ -6,7 +6,9 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
   data = Hash.new [] 
-  data[:]
+  data[director_data[:name]]=0 
+  while
+  
 binding.pry
 
 end
