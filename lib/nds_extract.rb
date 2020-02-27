@@ -21,6 +21,18 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
+  pp nds
   result = {}
+  nil
+  director_index=0 
+  while director_index<nds.count do 
+    directorname= nds[director_index][:name]
+    director=nds[director_index]
+    total= gross_for_director(director)
+    result[directorname]=total
+    director_index+=1 
+  end
+  result
+end
   nil
 end
