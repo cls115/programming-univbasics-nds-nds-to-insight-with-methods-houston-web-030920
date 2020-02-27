@@ -9,6 +9,8 @@ def gross_for_director(director_data)
   data[director_data[:name]]=0
   i=0 
   while i < director_data[:movies] do
+   data[director_data[:worldwide_gross
+end
     
   
 binding.pry
